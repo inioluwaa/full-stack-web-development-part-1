@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <style>
+          html {
+    background-color: lightyellow;
+              
+
+}
+            #age{
+                width: 50px;
+                height: 15px;
+            }
+fieldset{
+    vertical-align: middle;
+ border: 10px solid yellow;
+    margin-bottom: 10px;
+    width: 720px;
+    
+}
+            .colour1{
+                background-color: firebrick;
+                font-weight:bold;
+                color:white;
+                text-align:center;
+                width:70px;
+                padding: 3px;
+                 }
+          
+            .colour2{
+                background-color: darkmagenta;
+                font-weight:bold;
+                color:white;
+                text-align:center;
+                width: 100px;
+                padding: 10px;
+                padding-right: 10px;
+            }
+
+label{ width: 180px;
+    min-width: 4.5em;
+    display:inline-block;
+    text-align: right;
+    text-align: top;
+    font-weight: bold;
+    
+}
+            label+span{
+                display: inline-block;
+                min-width: 3em;
+                text-align: right;
+            }
+            
+            label,span,input[
+            type='range'
+            ],br{
+                vertical-align: middle;
+                line-height: 1.6;
+            }
+            
+            legend{
+                font-weight: bold;
+                
+            }
+}
+body{
+    text-decoration-style: solid;
+    
+}
+checkbox{
+    width: auto;
+}
+#address{
+    width: 360px;
+    height: 50px;
+}
+        
+     </style>
+        
+        <link type="text/css" rel="stylesheet" href="main.css" >
+       <title>Init Dating Website</title> 
+    </head>
+    
+    <h1>Please Enter Your Details For Our Dating website!</h1>
+    
+    <body>
+    
+    <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Your Face</legend>
+            <label for="image">Your Image:</label> <input type="file" name="yourimage" id="yourimage" ><br>
+            <label for="image">Image Preview:</label>
+        
+        </fieldset>
+     <fieldset>
+            <legend>Your General Details:</legend>
+            <label for="name">Name</label>
+            <input type="text" id=name name="name" placeholder="Enter your name here" required><br>
+         
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="gender" value="male" required><b>Male</b>
+            <input type="radio" name="gender" id="gender" value="female" required><b>Female</b>
+         <br>
+         
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+            
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+         
+            <label for="favcolor">Favorite Color:</label>
+            <input type="color" id="favcolor" name="favcolor"><br>
+         
+            <label for="country">Country</label>
+            <select name="country">
+<option value="">no selection</option>
+<option value="AU">Australia</option>
+<option value="CA">Canada</option>
+<option value="NL">Netherlands (Holland, Europe)</option>
+<option value="NG">Nigeria</option>
+<option value="US">United States of America</option>
+
+</select>
+        </fieldset>
+         
+        <fieldset>
+                <legend>Your Indicators</legend>
+                <label for="heightrange">Height:</label>
+             <span class="colour1"><b>Short</b></span>  
+             <input type="range" min="0" max="100" step="5" value="50" id="height" name="height"> 
+            <span class="colour2"><b>Tall</b></span>
+             <br>
+             
+            <label for="salaryrange">Salary:</label>
+             <span class="colour1"><b>Poor</b></span>
+             <input type="range" min="0" max="100" step="5" value="50" id="salary" name="salary">
+             <span class="colour2"><b>Rich</b></span>
+         </fieldset>
+        
+        <fieldset>
+         <legend>Your Contact Information</legend>
+           <label for="email">Email:</label>
+             <input type="email" id="email" value="@" name="email" required><br>
+            <label for="mobilenumber">Mobile Number:</label>
+            <input type="tel" id="mobilenumber" value="+" name="mobilenumber"><br>
+            <label for="address">Address:</label>
+            <input type="textarea" id="address"  name="address"><br>
+            
+            <label for="contact">Methods To Contact You:</label>
+            <input type="checkbox" id="Email" value="Email" required><b>Email</b>
+            <input type="checkbox" id="Whatsapp" value="Whatsapp"><b>Whatsapp</b>
+            <input type="checkbox" id="inapp" value="inapp"><b>In-app chat</b>
+        </fieldset>
+        <input type="submit" value="Submit">
+    
+    
+    </form>
+        </body>
+  
+        
+       
+</html>        
